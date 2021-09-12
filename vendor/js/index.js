@@ -1,23 +1,40 @@
-$('.owl-carousel')
+var carouselMarket = $('.owl-carousel-market');
 
-var carouselEl = $('.owl-carousel');
-
-carouselEl.owlCarousel({
+carouselMarket.owlCarousel({
     center: true,
-    items:2,
+    loop:true,
+    margin:10,
+    // responsive:{
+    //     600:{
+    //         items:4
+    //     }
+    // }
+})
+
+$(".btn-next").click(function() {
+    carouselMarket.trigger('next.owl.carousel');
+});
+
+$(".btn-prev").click(function() {
+    carouselMarket.trigger('prev.owl.carousel');
+});
+
+var carouselEconomics = $('.owl-carousel-economics');
+
+carouselEconomics.owlCarousel({
     loop:true,
     margin:10,
     responsive:{
         600:{
-            items:4
+            items:3
         }
     }
 })
 
 $(".btn-next").click(function() {
-    carouselEl.trigger('next.owl.carousel');
+    carouselEconomics.trigger('next.owl.carousel');
 });
 
 $(".btn-prev").click(function() {
-    carouselEl.trigger('prev.owl.carousel');
+    carouselEconomics.trigger('prev.owl.carousel');
 });

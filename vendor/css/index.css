@@ -1,14 +1,15 @@
+body{
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+    position: relative;
+
+}
 .intro {
     width: 100%;
-    height: 100vh;
-    background: rgb(254, 187, 234);
-    background: linear-gradient(
-        18deg,
-        rgba(254, 187, 234, 1) 1%,
-        rgba(14, 9, 34, 1) 11%,
-        rgba(14, 9, 34, 0.7903536414565826) 74%,
-        rgba(172, 185, 255, 1) 100%
-    );
+    min-height: 100vh;
     position: relative;
 }
 .header {
@@ -131,12 +132,15 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+.mouse-container{
+    width: 100%;
+    height: 69px;
+    margin: 50px 0;
+}
 .mouse-move {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(50%, -50%);
+    max-width: 47px;
+    max-height: 69px;
+    margin: 0 auto;
 }
 .mouse {
     position: relative;
@@ -174,16 +178,13 @@
     }
 }
 /* nft market */
-.nft-market {
+.nft-market{
     width: 100%;
-    min-height: 100vh;
-    background: rgb(14, 9, 34);
-    background: linear-gradient(321deg, rgba(172, 185, 255, 1) 0%, rgba(14, 9, 34, 1) 84%, rgba(254, 187, 234, 1) 100%);
+    height: auto;
     position: relative;
 }
 .nft-title {
     max-width: 595px;
-    max-height: 103px;
     font-family: Noir Pro;
     font-style: normal;
     font-weight: 600;
@@ -194,58 +195,49 @@
 }
 .nft-content {
     max-width: 594px;
-    max-height: 92px;
+    height: 92px;
     font-family: Noir Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: #BDBDBD;
     margin: 0 auto;
     margin-top: 30px;
 }
-/* .market-list-item{
-    width: 1992px;
-    height: 637px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-wrap: break-word;
+.list-market{
+    height: auto;
 }
-.market-list-item .card{
-    word-break: keep-all;
-    overflow: hidden;
-} */
 .list-market .owl-item {
     width: 299px !important;
     margin-right: 35px;
 }
-.nft-market .card-market {
+.card-item {
     height: auto;
-    margin-top: 30px;
+    margin-top: 15px;
 }
-.nft-market .card-market img {
+.card-item img {
     width: 299px !important;
     height: 388px;
     object-fit: cover;
 }
-.card-market .card-title {
+.card-title {
     width: 299px;
     font-family: Noir Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 150.5%;
     letter-spacing: 0.035em;
     text-transform: capitalize;
     color: #ffffff;
     text-shadow: 0px 0px 8px #febbea;
 }
-.card-market .card-text {
+.card-text {
     font-family: Noir Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     /* Inside Auto Layout */
@@ -253,6 +245,13 @@
     order: 1;
     flex-grow: 0;
     margin: 5px 0px;
+}
+.btnSlide{
+    margin-top: 33px;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 32px !important;
+    text-align: left;
 }
 .ellipseSlideNext,
 .ellipseSlidePrev {
@@ -279,23 +278,21 @@
 /* enjoy */
 .enjoy {
     width: 100%;
-    min-height: 100vh;  
-    /* background: rgb(14,9,34);  */
-    background: linear-gradient(321deg, rgba(172,185,255,1) 0%, rgba(14,9,34,1) 84%, rgba(254,187,234,1) 100%); 
+    height: auto;
     position: relative;
 }
-.enjoy-ball-center {
+.enjoy-ball-right {
     position: absolute;
-    width: 527px;
+    width: 348px;
     height: 527px;
-    right: -150px;
+    right: 0;
     top: 20%;
     /* opacity: 0.45; */
-    background: url("../img/intro/circle-img.png");
+    background: url("../img/enjoy/ball.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
-.enjoy-ball-right{
+.enjoy-ball-left{
     position: absolute;
     width: 217px;
     height: 217px;
@@ -309,7 +306,7 @@
     position: relative;
     min-height: 1em;
     color: gray;
-    height: 50px;
+    height: 80px;
 }
 .step + .step {
     margin-top: 1.5em;
@@ -365,7 +362,9 @@
 .step .title {
     font-weight: bold;
     margin-left: 15px;
-    color: white !important;
+    font-size: 20px;
+    color: #BDBDBD !important;
+    font-family: Noir Pro;
 }
 .step .caption {
     font-size: 0.8em;
@@ -376,8 +375,9 @@
     margin: 0 auto;
     margin-top: 30px;
     border-bottom: 1px solid #6C6C6C;
+    padding-bottom: 30px;
 }
-.enjoy-bottom-step a{
+.bottom-step a{
     height: 22px;
     font-family: Noir Pro;
     font-style: italic;
@@ -389,4 +389,30 @@
     color: #ffffff;
     text-shadow: 0px 0px 8px #febbea;
     text-decoration: none;
+}
+.economics{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.economics-cake-left {
+    position: absolute;
+    width: 348px;
+    height: 656px;
+    top: 0;
+    /* opacity: 0.45; */
+    background: url("../img/economics/cake.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* //apply */
+.apply{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.ntf-platform{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
 }
