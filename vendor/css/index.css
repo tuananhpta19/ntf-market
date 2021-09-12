@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Noir Pro SemiB";
+    src: url("../font/NoirPro-SemiBold.otf")
+}
+@font-face {
+    font-family: "Noir Pro Regular";
+    src: url("../font/NoirPro-Regular.otf")
+}
+@font-face {
+    font-family: "Noir Pro Light";
+    src: url("../font/NoirPro-Light.otf")
+}
+
 body{
 	background-image: url("../img/bg.png");
 	background-size: cover;
@@ -5,7 +18,6 @@ body{
 	width: 100%;
 	min-height: 100vh;
     position: relative;
-
 }
 .intro {
     width: 100%;
@@ -14,10 +26,11 @@ body{
 }
 .header {
     width: 100%;
-    border: 1px solid white;
     height: 91px;
     position: absolute;
     color: white;
+    background: linear-gradient(#17132f, #1b154ba3);
+    opacity: 0.9;
 }
 .header__logo {
     height: 91px;
@@ -31,9 +44,13 @@ body{
 .header__menu {
     height: 91px;
     font-size: 12px;
+    font-family: Noir Pro Regular;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
 }
 .header__menu a {
-    color: white;
+    color: #BDBDBD;    
     text-decoration: none;
 }
 .header__menu a:hover {
@@ -48,7 +65,7 @@ body{
 .header__menu .active {
     color: #febbea;
 }
-.btn {
+.btnNTF {
     background: linear-gradient(94.98deg, #fab4e5 0%, #a0b1ff 100%);
     width: 105px;
     height: 37px;
@@ -68,7 +85,7 @@ body{
 .content-intro .title {
     width: 415px;
     height: 198px;
-    /* font-family: Noir Pro; */
+    font-family: Noir Pro SemiB; 
     font-style: normal;
     font-weight: 600;
     font-size: 55px !important;
@@ -79,21 +96,26 @@ body{
 }
 .content-intro .text {
     margin-bottom: 37px;
-    font-family: Noir Pro;
+    font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.035em;
+    color: #FFFFFF;
 }
 .content-intro .btn-intro {
-    font-family: Noir Pro;
+    /* font-family: Noir Pro; */
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #ffffff;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
     width: 157px;
     height: 43px;
 }
@@ -185,23 +207,32 @@ body{
 }
 .nft-title {
     max-width: 595px;
-    font-family: Noir Pro;
+    font-family: Noir Pro SemiB, Noir Pro Regular;
     font-style: normal;
     font-weight: 600;
     font-size: 55px;
+    line-height: 66px;
     text-align: center;
     letter-spacing: 0.035em;
     margin: 0 auto;
+    padding-top: 62px
 }
+.nft-title .__color__white{
+    font-size: 35px;
+    /* font-family: Noir Pro Regular; */
+    color: #FFFFFF;
+}
+
 .nft-content {
     max-width: 594px;
     height: 92px;
-    font-family: Noir Pro;
+    font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
+    line-height: 26px;
     text-align: center;
-    color: #BDBDBD;
+    color: #EBEBEB;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -309,7 +340,7 @@ body{
     height: 80px;
 }
 .step + .step {
-    margin-top: 1.5em;
+    margin-top: 1.9em;
 }
 .step > div:first-child {
     position: static;
@@ -323,6 +354,14 @@ body{
     color: #fab4e5;
 }
 .step.step-active .circle {
+    color: #0E0922 !important;
+    font-family: Noir Pro Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* identical to box height */
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
     background: linear-gradient(94.98deg, #fab4e5 0%, #a0b1ff 100%) !important;
 }
 
@@ -336,6 +375,12 @@ body{
     border-radius: 100%;
     color: #fff;
     text-align: center;
+    font-family: Noir Pro Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
     z-index: 2;
 }
 
@@ -360,11 +405,24 @@ body{
 
 /* Stepper Titles */
 .step .title {
-    font-weight: bold;
+    width: 290px;
+    height: 25px;
+    font-family: Noir Pro Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 17px;
     margin-left: 15px;
     font-size: 20px;
     color: #BDBDBD !important;
-    font-family: Noir Pro;
+    padding-top: 4px;
+
 }
 .step .caption {
     font-size: 0.8em;
@@ -375,7 +433,7 @@ body{
     margin: 0 auto;
     margin-top: 30px;
     border-bottom: 1px solid #6C6C6C;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 .bottom-step a{
     height: 22px;
@@ -461,3 +519,60 @@ body{
     
 }
 /* road map */
+.nft-square{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    position: relative;
+}
+.card-square{
+    background-image: url("../img/square/1.png");
+    width: 353px;
+    margin: 0 auto;
+    height: 259px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.form-contact{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.form-contact h3{
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+}
+.form-contact .text{
+    margin-top: 20px;
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #EBEBEB;
+}
+.form-contact .contact{
+    margin-top: 20px;
+    letter-spacing: 0.035em;
+    text-transform-contact: lowercase;
+    background: -webkit-linear-gradient(#febbea, #acb9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: red;
+
+}
+.form-box {
+    border: 3px solid;
+    border-image:linear-gradient(45deg,#FAB4E5,#A0B1FF) 10;
+    height: 426px;
+    width: 80%;
+}

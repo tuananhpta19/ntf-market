@@ -1,9 +1,11 @@
 var carouselMarket = $('.owl-carousel-market');
 
 carouselMarket.owlCarousel({
-    center: true,
+    // center: true,
     loop:true,
-    margin:10,
+    margin:9,
+    autoWidth:true,
+    items:4
     // responsive:{
     //     600:{
     //         items:4
@@ -37,4 +39,23 @@ $(".btn-next").click(function() {
 
 $(".btn-prev").click(function() {
     carouselEconomics.trigger('prev.owl.carousel');
+});
+var carouselSquare = $('.owl-carousel-square');
+
+carouselSquare.owlCarousel({
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+
+$(".btn-next").click(function() {
+    carouselSquare.trigger('next.owl.carousel');
+});
+
+$(".btn-prev").click(function() {
+    carouselSquare.trigger('prev.owl.carousel');
 });
