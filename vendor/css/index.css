@@ -413,6 +413,51 @@ body{
 }
 .ntf-platform{
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     position: relative;
+    margin: 50px 0;
 }
+
+.border-grandient {
+    border-image-source: linear-gradient(#FFFFFF, #A0B1FF);
+    border-image-slice: 20;
+    border-radius: 35px !important;
+}
+.bg-platform{
+    background-image: url("../img/platform/bg.png");
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    position: relative;
+    border: 3px solid #FFFFFF;  
+}
+.bg-platform .platform-content{
+    position: absolute;
+    width: 95%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 87px;
+}
+.bg-platform .flatform-menu{
+    margin-top: 30px;
+}
+.flatform-menu ul li{
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    list-style: inside;
+    text-transform: capitalize;
+    color: #BDBDBD;
+    
+}
+/* road map */
