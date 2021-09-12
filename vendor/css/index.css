@@ -1,0 +1,261 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: rgb(254,187,234);
+    background: linear-gradient(18deg, rgba(254,187,234,1) 1%, rgba(14,9,34,1) 11%, rgba(14,9,34,0.7903536414565826) 74%, rgba(172,185,255,1) 100%);
+    position: relative;
+}
+.header{
+    width: 100%;
+    border: 1px solid white;
+    height: 91px;
+    position: absolute;
+    color: white;
+}
+.header__logo{
+    height: 91px;
+    line-height: 91px;
+}
+.header__logo img{
+    max-width: 180px;
+    max-height: 50px;
+    vertical-align: middle;
+}
+.header__menu{
+    height: 91px;
+    font-size: 12px;
+}
+.header__menu a{
+    color: white;
+    text-decoration: none;
+}
+.header__menu a:hover{
+    color: #FEBBEA
+}
+
+.header__menu li{
+    width: auto;
+    height: 14px;
+    margin: 0 19px;
+}
+.header__menu .active{
+    color: #FEBBEA
+}
+.btn{
+    background: linear-gradient(94.98deg, #FAB4E5 0%, #A0B1FF 100%);
+    width: 105px;
+    height: 37px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-intro{
+    position: absolute;
+    top: 91px;
+    color: white;
+    margin-top: 100px;
+    width: 100%;
+}
+.content-intro .title{
+    width: 415px;
+    height: 198px;
+    /* font-family: Noir Pro; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px !important;
+    line-height: 66px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    margin-bottom: 17px;
+}
+.content-intro .text{
+    margin-bottom: 37px;
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+}
+.content-intro .btn-intro{
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 157px;
+    height: 43px;
+}
+.text-hightlight{
+    background: -webkit-linear-gradient(#FEBBEA, #ACB9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.intro-ball-left{
+    position: absolute;
+    width: 125px;
+    height: 300px;
+    right: 0;
+    top: 91px;
+    background: url("../img/intro/ballLeft.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.intro-ball-center{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    right: 48px;
+    top: 403px;
+    background: url("../img/intro/circle-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.intro-cake-left{
+    position: absolute;
+    width: 425px;
+    height: 336px;
+    left: -43px;
+    bottom: -50px;    
+    background: url("../img/intro/cake.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mouse-move{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(50%, -50%);  
+}
+.mouse{
+    position: relative;
+    max-width: 47px;
+    max-height: 69px;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-49%, -50%);  
+}
+.arrow-down{
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; bottom: 10px}
+    30% { opacity: 0.5; bottom: 5px;}
+    70% { opacity: 1; bottom: 0;}
+    100% { opacity: 0; bottom: 0}
+  }
+/* nft market */
+.nft-market{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(14,9,34);
+    background: linear-gradient(321deg, rgba(172,185,255,1) 0%, rgba(14,9,34,1) 84%, rgba(254,187,234,1) 100%);
+    position: relative;
+}
+.nft-title{
+    max-width: 595px;
+    max-height: 103px;
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    margin: 0 auto;
+}
+.nft-content{
+    max-width: 594px;
+    max-height: 92px;
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #BCBCBC;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* .market-list-item{
+    width: 1992px;
+    height: 637px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+.market-list-item .card{
+    word-break: keep-all;
+    overflow: hidden;
+} */
+.list-market .owl-item{
+    width: 299px !important;
+    margin-right: 35px;
+}
+.nft-market .card-market{
+    height: auto;
+    margin-top: 30px;
+}
+.nft-market .card-market img{
+    width: 299px !important;
+    height: 388px;
+    object-fit: cover;
+}
+.card-market .card-title{
+    width: 299px;
+
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 150.5%;
+    /* identical to box height, or 53px */
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    /* 2 */
+    text-shadow: 0px 0px 8px #FEBBEA;
+}
+.card-market .card-text{
+    font-family: Noir Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 5px 0px;
+}
+.ellipseSlideNext, .ellipseSlidePrev {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.btn-next, .btn-prev{
+    position: relative;
+    height: 68px;
+	width: 68px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.slide-arrow-left, .slide-arrow-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
