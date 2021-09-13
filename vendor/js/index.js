@@ -43,8 +43,9 @@ $(".btn-prev").click(function() {
 var carouselSquare = $('.owl-carousel-square');
 
 carouselSquare.owlCarousel({
-    loop:true,
-    margin:10,
+    // loop:true,
+    // margin:10,
+    // autoWidth: true,
     responsive:{
         0:{
             items:1

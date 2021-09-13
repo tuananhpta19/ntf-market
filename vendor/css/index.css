@@ -108,11 +108,11 @@ body {
     letter-spacing: 0.035em;
     color: #ffffff;
 }
-.content-intro .btn-intro {
-    /* font-family: Noir Pro; */
+.content-intro .btn-comming-soon {
+    font-family: Noir Pro SemiB;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 22px;
     text-align: center;
     color: #ffffff;
@@ -258,7 +258,7 @@ body {
 }
 .card-title {
     width: 299px;
-    font-family: Noir Pro;
+    font-family: Noir Pro SemiB;
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -266,10 +266,10 @@ body {
     letter-spacing: 0.035em;
     text-transform: capitalize;
     color: #ffffff;
-    text-shadow: 0px 0px 8px #febbea;
+    text-shadow: 0px 0px 8px #febbea !important;
 }
 .card-text {
-    font-family: Noir Pro;
+    font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -346,7 +346,7 @@ body {
 }
 .still-question{
     height: 22px;
-    font-family: "Noir Pro Regular", "Noir Pro Italic";
+    font-family: Noir Pro Regular;
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -354,6 +354,26 @@ body {
     text-align: center;
     letter-spacing: -0.03em;
     color: #BDBDBD;
+}
+.get-farm{
+    
+    font-family: Noir Pro SemiB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
 }
 .step {
     position: relative;
@@ -559,6 +579,26 @@ body {
     margin-top: 50px;
     position: relative;
 }
+.gradient-border-roadmap {
+    --borderWidth: 1px;
+    background: #0E0922!important;
+    position: relative;
+    border-radius: var(--borderWidth);
+    border-radius: 6px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.gradient-border-roadmap:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(45deg, #fab4e5, #a0b1ff);
+    border-radius: 6px;
+    z-index: -1;
+    background-size: 300% 300%;
+}
 .roadmap-ball-left {
     position: absolute;
     width: 289px;
@@ -666,10 +706,8 @@ body {
 }
 #form-box {
     width: 550px;
-    height: 426px;
+    height: 450px;
     color: #e0e0e0;
-    font-family: "Raleway";
-    font-size: 2.5rem;
 }
 .gradient-border-form {
     --borderWidth: 1px;
@@ -696,115 +734,75 @@ body {
     padding-top: 56px;
     margin: 0 auto;
 }
+.form__content [class*="col-"]{
+    padding: 5px;
+}
 .form__content input{
     color: #ffffff;
 }
 .form-input__title {
-    width: 222px;
+    /* width: 222px; */
+    width: 100%;
     height: 48px;
     background: #0e0922;
     border-radius: 7px;
     margin-bottom: 5px;
     border: 0;
+    font-family: Noir Pro Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 15px 23px;
 }
 .form-input__content{
     padding: 15px 23px;
     width: 452px;
-    height: 162px;
+    height: 162px !important;
+    border: 0;
     background: #0E0922;
     border-radius: 7px;
-    border: 0;
-
+    color: #ffffff;
+    overflow:hidden
 }
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    width: 91px;
-    height: 18px;
-    font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 130%;
+    height: 100%;
     color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;
+    font-family: Noir Pro Light;
+
+
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    width: 91px;
-    height: 18px;
     font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 130%;
     color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;
+    height: 100%;
+
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    width: 91px;
-    height: 18px;
     font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 130%;
     color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;
+    height: 100%;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    width: 91px;
-    height: 18px;
     font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 130%;
     color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;
+    height: 100%;
+
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-    width: 91px;
-    height: 18px;
     font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 130%;
     color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;}
+}
 
 ::placeholder { /* Most modern browsers support this now. */
-    width: 91px;
-    height: 18px;
     font-family: Noir Pro Light;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 130%;
-    color: #E0E0E0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    padding: 15px 23px;
+    height: 100%;
 }
 .btn-form{
     width: 134px;
