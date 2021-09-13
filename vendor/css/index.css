@@ -20,8 +20,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh;
-    position: relative;
+    height: 100%;
 }
 .intro {
     width: 100%;
@@ -506,7 +505,7 @@ body {
 /* //apply */
 .apply {
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     position: relative;
 }
 .ntf-platform {
@@ -516,28 +515,24 @@ body {
     margin: 50px 0;
 }
 
-.bg-platform {
-    background-image: url("../img/platform/bg.png");
+.bg-platform  {
+    flex-shrink: 0;
+    height: 100%;
     width: 100%;
-    margin: 0 auto;
-    height: 600px;
+    border: 3px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 35px;
-    position: relative;
-    border: 3px solid #ffffff;
+    box-sizing: border-box;
+      border-radius: 27px;
+    background-image: url("../img/platform/bg.png");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid white
 }
-.bg-platform .platform-content {
-    position: absolute;
-    width: 95%;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 87px;
+
+.platform-content{
+    padding: 60px 0;
 }
 .bg-platform .flatform-menu {
     margin-top: 30px;
@@ -560,8 +555,8 @@ body {
     /* border-image:linear-gradient(45deg,#FAB4E5,#A0B1FF) 10; */
 }
 .platform-content__text {
-    width: 690px;
-    height: 104px;
+    width: 80%;
+    height: auto;
     font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;

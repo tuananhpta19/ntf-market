@@ -1,4 +1,8 @@
-@media screen and (max-width: 767px) {
+@font-face {
+    font-family: "Noir Pro Regular";
+    src: url("../../font/NoirPro-Regular.otf");
+}
+@media screen and (max-width: 992px) {
     .container {
         width: 90% !important;
     }
@@ -138,6 +142,32 @@
         height: 338px;
         left: -50px;
         top: -55px;
+    }
+
+    /* //flat form */
+    /* .bg-platform {
+        height: 1000px; 
+   } */
+    .platform-content{
+        margin-top: 30px;
+    }
+    .platform-content .text-hightlight{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .platform-content .platform-content__text{
+        width: 250px;
+        font-size: 16px;
+        text-align: center;        
+        color: #EBEBEB;
+        height: auto;
+    }
+    .flatform-menu .card-title{
+        font-size: 25px !important;
+        font-family: "Noir Pro Regular" !important;
+    }
+    .flatform-menu__border{
+        border: 0;
     }
 }
 
