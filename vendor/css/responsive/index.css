@@ -118,6 +118,27 @@
         height: 220px;
         top: 230px;
     }
+    /* ecomic */
+    .list-economics.container{
+        width: 100% !important;
+        margin: 0;
+    }
+    .list-economics .card-text{
+        width: 260px;
+        font-size: 16px;
+        line-height: 129.5%;
+    }
+    .list-economics .title{
+        width: 191px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .economics-cake-left{
+        width: 338px;
+        height: 338px;
+        left: -50px;
+        top: -55px;
+    }
 }
 
 

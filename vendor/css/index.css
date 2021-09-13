@@ -486,6 +486,13 @@ body {
     height: auto;
     position: relative;
 }
+.list-economics .owl-stage{
+    margin: 0 auto;
+}
+.list-economics .owl-item {
+    width: 299px !important;
+    margin-right: 35px;
+}
 .economics-cake-left {
     position: absolute;
     width: 348px;
