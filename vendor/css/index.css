@@ -571,7 +571,7 @@ body {
 .roadmap {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin: 50px 0; 
     position: relative;
 }
 .gradient-border-roadmap {
