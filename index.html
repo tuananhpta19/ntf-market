@@ -35,44 +35,49 @@
 <body>
     <div class="intro">
         <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="header__logo w-100 d-flex justify-content-start align-items-center">
-                            <img src="./vendor/img/intro/logo.png" alt="Ảnh logo">
+            <div class="header__pc  d-none d-xl-flex">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="header__logo w-100 d-flex justify-content-start align-items-center">
+                                <img src="./vendor/img/intro/logo.png" alt="Ảnh logo">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8">
-                        <ul class="header__menu d-flex justify-content-center align-items-center">
-                            <li>
-                                <a href=".header" class="active">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#nft-market">NFT MARKET</a>
-                            </li>
-                            <li>
-                                <a href="#nft-economics">NFT Economics</a>
-                            </li>
-                            <li>
-                                <a href="#form-contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 w-100 d-flex justify-content-center align-items-center">
-                            <button class="btnNTF btn-comming-soon">
-                                <span style="font-size: 14px;"> Comming soon</span>
-                            </button>
+                        <div class="col-8">
+                            <ul class="header__menu d-flex justify-content-center align-items-center">
+                                <li>
+                                    <a href=".header" class="active">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#nft-market">NFT MARKET</a>
+                                </li>
+                                <li>
+                                    <a href="#nft-economics">NFT Economics</a>
+                                </li>
+                                <li>
+                                    <a href="#form-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+                                <button class="btnNTF btn-comming-soon">
+                                    <span style="font-size: 14px;"> Comming soon</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="header__mobile h-100 d-none">
+            </div>
+            <div class="container">
+                <div class="header__mobile d-inline-block d-xl-none" style="height: 91px; width: 100%;">
                     <div class="row h-100 w-100">
                         <div class="col-6 h-100 w-100">
-                            <div class="header__logo__mobile w-100 d-flex justify-content-start align-items-center ">
+                            <div
+                                class="header__logo__mobile h-100 w-100 d-flex justify-content-start align-items-center ">
                                 <img src="./vendor/img/intro/logo.png" alt="Ảnh logo">
                             </div>
                         </div>
@@ -85,7 +90,8 @@
                 </div>
             </div>
         </div>
-        <div class="content-intro">
+    
+        <div class="content-intro  d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
@@ -101,13 +107,13 @@
                         </button>
                     </div>
                     <div class="col-6">
-                        <img style="max-width:596px; max-height: 268px;" src="./vendor/img/intro/type-intro.png"
+                        <img style="width: 100%; object-fit: cover;" src="./vendor/img/intro/type-intro.png"
                             alt="Ảnh intro type">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content-intro__mobile d-none">
+        <div class="content-intro__mobile d-block d-lg-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

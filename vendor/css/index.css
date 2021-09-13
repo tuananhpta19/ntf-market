@@ -30,7 +30,7 @@ body {
 .header {
     width: 100%;
     height: 91px;
-    position: absolute;
+    /* position: absolute; */
     color: white;
     background: linear-gradient(#17132f, #1b154ba3);
     opacity: 0.9;
@@ -79,8 +79,9 @@ body {
 }
 
 .content-intro {
-    position: absolute;
-    top: 91px;
+    /* position: absolute;
+    top: 91px; */
+    margin-top: 91px;
     color: white;
     margin-top: 100px;
     width: 100%;
