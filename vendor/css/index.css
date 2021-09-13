@@ -615,20 +615,6 @@ body {
     background-repeat: no-repeat;
 }
 /* square */
-.nft-square {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.card-square {
-    background-image: url("../img/square/1.png");
-    width: 353px;
-    margin: 0 auto;
-    height: 259px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
 .nft-square__text {
     width: 312px;
     height: 52px;

@@ -169,6 +169,21 @@
     .flatform-menu__border{
         border: 0;
     }
+
+    /* square */
+    .nft-square__text{
+        font-size: 16px;
+        line-height: 129.5%;
+        color: #FFFFFF;
+        width: 98px;
+        height: 63px;
+    }
+    .nft-square [class*="col-"]{
+        padding: 0;
+    }
+    .nft-square .btnNTF{
+        margin-top: 10px !important;
+    }
 }
 
 
