@@ -82,9 +82,42 @@
     .card-text{
         font-size: 16px;
         line-height: 129.5%;
-
     }
-
+    /* enjoy */
+    .step-container{
+        padding-bottom: 20px;  
+    }
+    .step{
+        height: 78px
+    }
+    .step .title{
+        font-size: 16px !important;
+        color: #FFFFFF !important;
+        line-height: 22px;
+        width: 90%;
+    }
+    .step.step-active {
+        margin: 6px 0
+    }
+    .step.step-active {
+        margin: 6px 0
+    }
+    .step .circle:after{
+        height: 100%;
+    }
+    .step-container{
+        width: 100% !important;
+    } 
+    .enjoy-ball-left{
+        width: 156px;
+        height: 156px;
+        left: -53px;
+    }
+    .enjoy-ball-right{
+        width: 145px;
+        height: 220px;
+        top: 230px;
+    }
 }
 
 

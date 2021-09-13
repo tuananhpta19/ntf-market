@@ -346,7 +346,7 @@ body {
 }
 .still-question{
     height: 22px;
-    font-family: Noir Pro Regular;
+    font-family: "Noir Pro Regular";
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -356,20 +356,12 @@ body {
     color: #BDBDBD;
 }
 .get-farm{
-    
-    font-family: Noir Pro SemiB;
+    font-family: "Noir Pro SemiB";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
-
-
     color: #FFFFFF;
-
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -378,8 +370,10 @@ body {
 .step {
     position: relative;
     min-height: 1em;
-    color: gray;
     height: 80px;
+}
+.step:nth-child(1){
+    height: 65px;
 }
 .step + .step {
     margin-top: 1.9em;
@@ -392,8 +386,8 @@ body {
     margin-left: 1.5em;
     padding-left: 1em;
 }
-.step.step-active {
-    color: #fab4e5;
+.step.step-active .title{
+    color: #fab4e5 !important;
 }
 .step.step-active .circle {
     color: #0e0922 !important;
@@ -447,7 +441,7 @@ body {
 
 /* Stepper Titles */
 .step .title {
-    width: 290px;
+    width: 300px;
     height: 25px;
     font-family: Noir Pro Light;
     font-style: normal;
@@ -455,15 +449,13 @@ body {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.035em;
-    color: #ffffff;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 17px;
-    margin-left: 15px;
     font-size: 20px;
     color: #bdbdbd !important;
     padding-top: 4px;
+    padding-left: 14px;
 }
 .step .caption {
     font-size: 0.8em;
