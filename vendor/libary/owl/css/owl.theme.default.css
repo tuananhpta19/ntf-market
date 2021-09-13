@@ -60,3 +60,7 @@
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;    background: linear-gradient(94.98deg, #fab4e5 0%, #a0b1ff 100%);
 }
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 32px !important;
+  text-align: left;
+}

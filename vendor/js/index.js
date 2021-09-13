@@ -2,7 +2,7 @@ var carouselMarket = $('.owl-carousel-market');
 
 carouselMarket.owlCarousel({
     // center: true,
-    // loop:true,
+    loop:true,
     margin:9,
     autoWidth:true,
     items:4
