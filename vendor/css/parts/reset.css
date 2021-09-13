@@ -50,3 +50,7 @@ table {
 .container{
 	width: 70%;
 }
+html {
+	scroll-behavior: smooth;
+  }
+  

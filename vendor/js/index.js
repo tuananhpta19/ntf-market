@@ -2,7 +2,7 @@ var carouselMarket = $('.owl-carousel-market');
 
 carouselMarket.owlCarousel({
     // center: true,
-    loop:true,
+    // loop:true,
     margin:9,
     autoWidth:true,
     items:4
@@ -59,3 +59,7 @@ $(".btn-next").click(function() {
 $(".btn-prev").click(function() {
     carouselSquare.trigger('prev.owl.carousel');
 });
+
+$(document).ready(function(){
+
+})

@@ -392,7 +392,7 @@ body{
     right: 50%;
     bottom: 1px;
     left: 50%;
-    height: 99%;
+    height: 113%;
     width: 3px;
     transform: scale(1, 2);
     transform-origin: 50% -100%;
@@ -457,8 +457,8 @@ body{
     position: absolute;
     width: 348px;
     height: 656px;
-    top: 0;
-    /* opacity: 0.45; */
+    top: 100px;
+    opacity: 0.45;
     background: url("../img/economics/cake.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -507,16 +507,34 @@ body{
 .bg-platform .flatform-menu{
     margin-top: 30px;
 }
+.flatform-menu{
+    width: 90%;
+}
 .flatform-menu ul li{
-    font-family: Noir Pro;
+    font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 130%;
-    list-style: inside;
     text-transform: capitalize;
-    color: #BDBDBD;
-    
+    color: #FFFFFF;
+    list-style: inside;
+}
+.flatform-menu__border{
+    border-right: 2px solid #FFFFFF;
+    /* border-image:linear-gradient(45deg,#FAB4E5,#A0B1FF) 10; */
+}
+.platform-content__text{
+    width: 690px;
+    height: 104px;
+    font-family: Noir Pro Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #EBEBEB;
 }
 /* road map */
 .nft-square{
@@ -533,6 +551,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+}
+.nft-square__text{
+    width: 312px;
+    height: 52px;
+    font-family: Noir Pro Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 5px 0px;
 }
 .form-contact{
     width: 100%;
