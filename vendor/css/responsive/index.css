@@ -1,0 +1,92 @@
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90% !important;
+    }
+    .header__logo__mobile {
+        height: 91px;
+        line-height: 91px;
+    }
+    .header__logo__mobile img {
+        width: 134px;
+        height: 36px;
+    }
+    .content-intro__mobile {
+        position: absolute;
+        /* top: 91px; */
+        color: white;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .content-intro__title__mobile {
+        font-size: 40px !important;
+        line-height: 48px !important;
+        letter-spacing: -0.015em !important;
+        width: 286px;
+        height: 144px;
+    }
+    .content-intro__text__mobile {
+        width: 230px;
+        height: 90px;
+        font-size: 17px;
+        line-height: 120%;
+        letter-spacing: 0.035em;
+    }
+    .intro-ball-left {
+        width: 50px !important;
+        height: 135px !important;
+        top: 239px;
+    }
+    .intro-ball-center {
+        width: 65px;
+        height: 65px;
+        right: 10px;
+        top: 375px;
+    }
+    .intro-cake-left {
+        width: 184px;
+        height: 184px;
+        bottom: -250px;
+    }
+    /* nft market */
+    .list-market {
+        margin-left: 5% !important;
+    }
+    .nft-title {
+        width: 290px;
+        font-size: 35px;
+        line-height: 42px;
+        padding-top: 30px;
+    }
+    .__color__white {
+        font-size: 25px !important;
+    }
+    .nft-content {
+        font-size: 18px;
+        line-height: 121.5%;
+        width: 85%;
+    }
+    .comming-soon {
+        width: 101px !important;
+        font-size: 16px !important;
+        line-height: 150.5% !important;
+    }
+    .btn-next,
+    .btn-prev {
+        height: 57px !important;
+        width: 57px !important;
+    }
+    .card-title{
+        line-height: 150.5%;
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 16px;
+        line-height: 129.5%;
+
+    }
+
+}
+
+
+
+
