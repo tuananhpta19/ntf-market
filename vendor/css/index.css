@@ -696,6 +696,9 @@ body {
     padding-top: 56px;
     margin: 0 auto;
 }
+.form__content input{
+    color: #ffffff;
+}
 .form-input__title {
     width: 222px;
     height: 48px;
