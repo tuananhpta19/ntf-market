@@ -25,7 +25,7 @@ body {
 }
 .intro {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 .header {
@@ -86,7 +86,7 @@ body {
     margin-top: 100px;
     width: 100%;
 }
-.content-intro .title {
+.content-intro__title {
     width: 415px;
     height: 198px;
     font-family: Noir Pro SemiB;
@@ -98,7 +98,7 @@ body {
     text-transform: capitalize;
     margin-bottom: 17px;
 }
-.content-intro .text {
+.content-intro__text {
     margin-bottom: 37px;
     font-family: Noir Pro Light;
     font-style: normal;
@@ -211,7 +211,7 @@ body {
 }
 .nft-title {
     max-width: 595px;
-    font-family: Noir Pro SemiB, Noir Pro Regular;
+    font-family: "Noir Pro SemiB", "Noir Pro Regular";
     font-style: normal;
     font-weight: 600;
     font-size: 55px;
@@ -230,7 +230,7 @@ body {
 .nft-content {
     max-width: 594px;
     height: 92px;
-    font-family: Noir Pro Light;
+    font-family:"Noir Pro Light";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -257,7 +257,7 @@ body {
     object-fit: cover;
 }
 .card-title {
-    width: 299px;
+    /* width: 299px; */
     font-family: Noir Pro SemiB;
     font-style: normal;
     font-weight: 600;
