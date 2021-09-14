@@ -246,6 +246,9 @@
     .footer-content__logo{
         border: none;
     }
+    .footer__social{
+        justify-content: center !important;
+    }
 }
 
 
