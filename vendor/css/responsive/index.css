@@ -2,6 +2,10 @@
     font-family: "Noir Pro Regular";
     src: url("../../font/NoirPro-Regular.otf");
 }
+@font-face {
+    font-family: "Noir Pro Light";
+    src: url("../../font/NoirPro-Light.otf");
+}
 @media screen and (max-width: 992px) {
     .container {
         width: 90% !important;
@@ -63,6 +67,8 @@
     }
     .__color__white {
         font-size: 25px !important;
+        font-family: "Noir Pro Regular", "Noir Pro Light";
+        color: #FFFFFF;
     }
     .nft-content {
         font-size: 18px;
@@ -89,7 +95,7 @@
     }
     /* enjoy */
     .step-container{
-        padding-bottom: 20px;  
+        padding-bottom: 50px;  
     }
     .step{
         height: 78px
@@ -183,6 +189,11 @@
     }
     .nft-square .btnNTF{
         margin-top: 10px !important;
+    }
+    .square-new__ball{
+        width: 75px;
+        height: 140px;
+        top: 453px;
     }
     .roadmap-ball-right{
         width: 106px;

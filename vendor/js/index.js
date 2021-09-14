@@ -88,3 +88,17 @@ $("#btn-next__nft__square").click(function () {
 $("#btn-prev__nft__square").click(function () {
     carouselSquare.trigger('prev.owl.carousel');
 });
+
+$(document).ready(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('.back-to-top').removeClass("d-none");
+        } else {
+            $('.back-to-top').addClass("d-none");
+        }
+    });
+    
+    $(".back-to-top").click(function() {
+        $("html, body").animate({scrollTop: 0}, 200);
+     });
+})
