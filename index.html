@@ -33,7 +33,51 @@
 </head>
 
 <body>
-    <div class="intro">
+    <div class="side-bar__menu d-none">
+        <div class="side-bar">
+            <div class="side-bar-content">
+                <div style="height: 91px; width: 100%; padding: 0 30px;" class="side-bar__header">
+                    <div class="row h-100 w-100">
+                        <div class="col-6 h-100 w-100">
+                            <div
+                                class="header__logo__mobile h-100 w-100 d-flex justify-content-start align-items-center ">
+                                <img src="./vendor/img/intro/logo.png" alt="Ảnh logo">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="w-100 d-flex justify-content-end align-items-center h-100">
+                                <img src="./vendor/img/close-icon.png" alt="Ảnh close" class="close-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="header__menu side-bar-item h-100">
+                    <li>
+                        <a href="#intro" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#nft-market">NFT MARKET</a>
+                    </li>
+                    <li>
+                        <a href="#nft-economics">NFT Economics</a>
+                    </li>
+                    <li>
+                        <a href="#form-contact">Contact</a>
+                    </li>
+                    <li style="width: 112px">
+                                       
+                    </li>
+                </ul>
+                <button class="btnNTF btn-comming-soon btn-side-bar__mobile" style="width: 117px; height: 37px; line-height: 37px; margin-top: 15px; margin-left: 80px;">
+                    <span style="font-size: 14px;"> Coming soon</span>
+                </button>    
+            </div>
+        </div>
+    </div>
+    <div class="intro" id="intro">
         <div class="header">
             <div class="header__pc  d-none d-xl-flex">
                 <div class="container">
@@ -46,7 +90,7 @@
                         <div class="col-8">
                             <ul class="header__menu d-flex justify-content-center align-items-center">
                                 <li>
-                                    <a href=".header" class="active">Home</a>
+                                    <a href="#intro" class="active">Home</a>
                                 </li>
                                 <li>
                                     <a href="#">About</a>
@@ -83,7 +127,7 @@
                         </div>
                         <div class="col-6">
                             <div class="w-100 d-flex justify-content-end align-items-center h-100">
-                                <img src="./vendor/img/intro/navbar.png" alt="Ảnh nav bar">
+                                <img src="./vendor/img/intro/navbar.png" alt="Ảnh nav bar" class="nav-bar-icon">
                             </div>
                         </div>
                     </div>

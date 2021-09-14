@@ -22,6 +22,59 @@ body {
     width: 100%;
     height: 100%;
 }
+
+
+.side-bar__menu {
+    width: 100%;
+    height: calc(100vh + 97px);
+    background-image:  url("../img/nav_bg.png");
+    position: fixed;
+    width: 372px;
+    background-size: cover;
+    z-index: 999;
+    top: -30px;
+    left: -5px;
+}
+/*navbar styling starts*/
+.side-bar {
+    border-left: 0px;
+    position: absolute;
+    height: calc(100vh + 97px);
+    z-index: 9999;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    overflow-y: hidden;
+    /* left: -100%; */
+    width: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.side-bar__header{
+    width: 100%;
+    height: 91px;
+    /* position: absolute; */
+    color: white;
+    background: linear-gradient(#000000, #1b154ba3);
+}
+.side-bar-content {
+    margin-top: 30px;
+    width: 100%;
+}
+.side-bar-item li {
+    list-style: none;
+    height: 50px;
+    padding: 22px 30px;
+    line-height: 50px;
+    margin-left: 50px !important;
+}
+
+.side-bar-left {
+    left: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+
 .intro {
     width: 100%;
     height: 100vh;
