@@ -525,7 +525,7 @@ body {
     background-clip: content-box, border-box;
     background-size: cover;
     box-sizing: border-box;
-      border-radius: 27px;
+    border-radius: 27px;
     background-image: url("../img/platform/bg.png");
     background-size: cover;
     background-position: center center;
@@ -634,6 +634,9 @@ body {
     height: auto;
     margin: 100px 0;
 }
+.form__text{
+    width: 100%;
+}
 .form-contact h3 {
     width: 306px;
     height: 84px;
@@ -647,13 +650,14 @@ body {
 }
 .form-contact .text {
     margin-top: 20px;
-    width: 384px;
-    height: 92px;
+    /* width: 384px; */
     font-family: Noir Pro Light;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
+    height: auto;
+    margin-bottom: 5px;
     color: #ebebeb;
 }
 .form-contact .email-contact {
@@ -685,9 +689,26 @@ body {
 
     /* border-radius: 35px !important; */
 }
+.bg-platform  {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 27px;
+    background-image: url("../img/platform/bg.png");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid white
+}
+
 #form-box {
-    width: 550px;
-    height: 450px;
+    margin-top: 30px;
+    width: 100%;    
+    height: auto;
     color: #e0e0e0;
 }
 .gradient-border-form {
@@ -708,7 +729,7 @@ body {
     background: linear-gradient(45deg, #fab4e5, #a0b1ff);
     border-radius: 27px;
     z-index: -1;
-    background-size: 300% 300%;
+    /* background-size: 300% 300%; */
 }
 .form__content {
     width: 80%;
@@ -754,8 +775,6 @@ body {
     height: 100%;
     color: #E0E0E0;
     font-family: Noir Pro Light;
-
-
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-family: Noir Pro Light;
@@ -799,7 +818,9 @@ body {
     flex-grow: 0;
     margin: 0px 10px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 .footer{
     border-top: 0.5px solid #ACB9FF;
     width: 100%;
