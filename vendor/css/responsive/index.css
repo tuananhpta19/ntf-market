@@ -18,11 +18,14 @@
         width: 134px;
         height: 36px;
     }
+    .header {
+        background: #000000;
+    }
     .content-intro__mobile {
         position: absolute;
         /* top: 91px; */
         color: white;
-        margin-top: 100px;
+        margin-top: 30px;
         width: 100%;
     }
     .content-intro__title__mobile {
@@ -38,6 +41,18 @@
         font-size: 17px;
         line-height: 120%;
         letter-spacing: 0.035em;
+    }
+    .content-intro__mobile__btn{
+        font-family: Noir Pro SemiB;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
     }
     .intro-ball-left {
         width: 50px !important;
@@ -121,7 +136,7 @@
     .enjoy-ball-left{
         width: 156px;
         height: 156px;
-        left: -53px;
+        left: -70px;    
     }
     .enjoy-ball-right{
         width: 145px;
@@ -171,6 +186,7 @@
     .flatform-menu .card-title{
         font-size: 25px !important;
         font-family: "Noir Pro Regular" !important;
+        letter-spacing: 0;
     }
     .flatform-menu__border{
         border: 0;
