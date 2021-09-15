@@ -151,6 +151,14 @@ body {
     text-transform: capitalize;
     margin-bottom: 17px;
 }
+.intro__img__highlight{
+    width: 565px;
+    height: 111px;
+    margin-left: -26px;
+    background: url("../img/intro/intro-text-highlight.png"), url("../img/intro/intro-text-highlight-filter.png");
+    background-position: center center, center center;
+    background-repeat: no-repeat, repeat;
+}
 .content-intro__text {
     margin-bottom: 37px;
     font-family: Noir Pro Light;
@@ -555,6 +563,33 @@ body {
     background: url("../img/economics/cake.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+.economics-item__title{
+    height: auto;
+    font-family: "Noir Pro SemiB";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 150.5%;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 0px;
+}
+.economics-item__content{
+    font-family: "Noir Pro Light";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 5px 0px;
 }
 /* //apply */
 .apply {

@@ -2,7 +2,7 @@ var carouselMarket = $('.owl-carousel-market');
 
 carouselMarket.owlCarousel({
     // center: true,
-    loop: true,
+    // loop: true,
     margin: 9,
     autoWidth: true,
     // items:4
@@ -122,7 +122,15 @@ $(document).ready(function () {
         $(".side-bar__menu").removeClass("side-bar-left");
         $(".side-bar__menu").addClass("d-none");
     })
+    $(".close-icon").click(function () {
+        $(".side-bar__menu").removeClass("side-bar-left");
+        $(".side-bar__menu").addClass("d-none");
+    })
     $(".btn-side-bar__mobile").click(function(){
+        $(".side-bar__menu").removeClass("side-bar-left");
+        $(".side-bar__menu").addClass("d-none");
+    })
+    $(".header__logo__mobile").click(function(){
         $(".side-bar__menu").removeClass("side-bar-left");
         $(".side-bar__menu").addClass("d-none");
     })

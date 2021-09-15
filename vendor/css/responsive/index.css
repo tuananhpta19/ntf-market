@@ -42,6 +42,14 @@
         line-height: 120%;
         letter-spacing: 0.035em;
     }
+    .content-intro__title__mobile .intro__img__highlight{
+        width: 346px;
+        height: 69px;
+        margin-left: -12px;
+        background: url("../../img/intro/intro-text-highlight-mobile.png"), url("../../img/intro/intro-text-highlight-filter-mobile.png");
+        background-position: center center, center center;
+        background-repeat: no-repeat, repeat;
+    }
     .content-intro__mobile__btn{
         font-family: Noir Pro SemiB;
         font-style: normal;
